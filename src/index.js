@@ -1,3 +1,3 @@
 const message = "heyman";
 
-alert(message);
+console.log("heyman");
