@@ -3,8 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        index: "./src/index/js",
-        print: "./src/print.js",
+        index: "./src/MakeScreen.js",
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -12,7 +11,7 @@ module.exports = {
         }),
     ],
     output: {
-        filename: "Todo.bundle.js",
+        filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
 };
