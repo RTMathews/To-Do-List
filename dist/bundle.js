@@ -1,1 +1,1 @@
-alert("heyman");
+console.log("heyman");
