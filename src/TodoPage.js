@@ -1,1 +1,3 @@
-module.exports = {heyman};
+import { heyman } from "./ProjectButton";
+
+heyman();
