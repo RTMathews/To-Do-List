@@ -1,1 +1,0 @@
-(()=>{var r={229:r=>{r.exports="heyman"}},e={};function t(o){var a=e[o];if(void 0!==a)return a.exports;var n=e[o]={exports:{}};return r[o](n,n.exports,t),n.exports}(()=>{let r=t(229);alert(r)})()})();
