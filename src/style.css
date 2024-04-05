@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header {
+    font-size: 4rem;
+}
+
+#new-project-btn {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.current-project {
+    font-size: 4rem;
+}
+
+#new-task-btn {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
