@@ -1,4 +1,4 @@
-import { heyman } from "./ProjectButton";
+import { makeProject } from "./make-project";
 
-heyman();
+makeProject();
 import "./style.css";
