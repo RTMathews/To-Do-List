@@ -1,4 +1,4 @@
-function makeProject () {
+export function makeProject () {
     let allProjects = [];
     let projName = document.querySelector("#proj-name");
     let projValue = projName.value;
@@ -17,5 +17,3 @@ function makeProject () {
         allProjects.push(projValue);
     })
 };
-
-module.exports = makeProject();
