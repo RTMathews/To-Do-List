@@ -4,17 +4,17 @@ export function makeProject () {
     let projConfirm = document.querySelector(".proj-confirm");
     let projModal = document.querySelector(".project-modal");
     let projClose = document.querySelector(".proj-close-btn");
-    let projList = document.querySelector(".project-list");
+    let currentProj = document.querySelector(".project-list");
     
     const projBtn = document.querySelector("#new-project-btn");
     projBtn.addEventListener("click", () => {
         projModal.style.display = "block";
-    });
+    })
     projClose.addEventListener("click", () => {
         projModal.style.display = "none";
-    });
+    })
     projConfirm.addEventListener("click", () => {
         allProjects.push(projName);
-    });
-    projList.innerHTML += allProjects;
+    })
+    allProjects.innerHTML = projName;
 };
