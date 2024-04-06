@@ -1,3 +1,4 @@
 import "./style.css";
-import { Project } from "./make-project";
+import { makeProject } from "./make-project";
 
+makeProject();
