@@ -1,10 +1,10 @@
 export function makeProject () {
     let allProjects = [];
-    let projName = document.querySelector("#proj-name");
-    let projValue = projName.value;
+    let projName = document.querySelector("#proj-name").value;
     let projConfirm = document.querySelector(".proj-confirm");
     let projModal = document.querySelector(".project-modal");
     let projClose = document.querySelector(".proj-close-btn");
+    let currentProj = document.querySelector(".project-list").innerHTML = projName;
     
     const projBtn = document.querySelector("#new-project-btn");
     projBtn.addEventListener("click", () => {
@@ -14,6 +14,6 @@ export function makeProject () {
         projModal.style.display = "none";
     })
     projConfirm.addEventListener("click", () => {
-        allProjects.push(projValue);
+        allProjects.push(projName);
     })
 };
