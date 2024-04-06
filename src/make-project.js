@@ -16,5 +16,5 @@ export function makeProject () {
     projConfirm.addEventListener("click", () => {
         allProjects.push(projName);
     });
-
+    projList.innerHTML += allProjects;
 };
