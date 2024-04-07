@@ -1,22 +1,14 @@
 let allProjects = [];
+let projModal = document.querySelector(".project-modal")
+let newProj = document.querySelector("#new-proj-btn");
+newProj.addEventListener("click", () => {
+    projModal.style.display = "block";
+});
 
-export default class Project {
-    constructor(name, complete ,tasks=[]) {
-        this.name = name;
-        this.complete = complete;
-        this.tasks = tasks;
-    }
+function Project() {
+
 }
 
-Project.prototype.toggleComplete = function() {
-    this.complete = !this.complete
-}
+function addProject() {
 
-function toggleComplete(index) {
-    allProjects[index].toggleComplete();
-    renderProj();
-}
-
-function renderProj() {
-    
 }
