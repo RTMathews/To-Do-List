@@ -1,4 +1,3 @@
 import "./style.css";
-import { Project } from "./make-project";
+import {} from "./make-project";
 
-let projVal = new Project();
