@@ -1,14 +1,22 @@
-let projModal = document.querySelector(".project-modal");
-const newProj = document.querySelector("#new-proj-btn");
-const projClose = document.querySelector(".proj-close-btn");
-const delProj = document.querySelector(".del-proj-btn");
+let allProjects = [];
 
+export default class Project {
+    constructor(name, complete ,tasks=[]) {
+        this.name = name;
+        this.complete = complete;
+        this.tasks = tasks;
+    }
+}
 
-function projectModal() {
-    newProj.addEventListener("click", () => {
-        projModal.style.display = "block";
-    })
-    projClose.addEventListener("click", () => {
-        projModal.style.display = "none";
-    })
-};
+Project.prototype.toggleComplete = function() {
+    this.complete = !this.complete
+}
+
+function toggleComplete(index) {
+    allProjects[index].toggleComplete();
+    renderProj();
+}
+
+function renderProj() {
+    
+}
