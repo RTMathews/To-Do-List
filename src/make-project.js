@@ -19,7 +19,14 @@ export function Project(name, description, complete) {
 }
 
 export function render() {
-    
+    let projName = document.querySelector(".projects");
+    projName.innerHTML = "";
+    for(let i = 0; i < allProjects.length; i++) {
+        let proj = allProjects[i];
+        let projEl = document.createElement("div");
+        projEl.innerHTML = `<h1>${proj.name}<h1>`
+        projName.appendChild(projEl);
+    }
 }
 
 export function addProject() {
